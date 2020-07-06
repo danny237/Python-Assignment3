@@ -20,4 +20,4 @@ print('Enter list of number seperated by comma.')
 print('Example: 1,2,3')
 list_arr = [int(i) for i in input().strip().split(',')]
 sorted_arr = bubble_sort(list_arr)
-print(sorted_arr)
+print(f'Sorted list: {sorted_arr}')
