@@ -1,2 +1,6 @@
 questions.pdf
 base_file.py
+practise.py
+*/__pycache__
+.vscode
+venv
