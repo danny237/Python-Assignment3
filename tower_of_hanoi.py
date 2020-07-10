@@ -1,4 +1,4 @@
-"""Tower of hannoi"""
+"""Tower of hanoi"""
 
 def tower_of_hanoi(n, initial, final, aux):
     """process of """
