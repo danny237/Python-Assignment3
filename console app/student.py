@@ -5,9 +5,8 @@ import csv
 class Student:
 
     count = 0
-    def __init__(self, student_id, name, email,course, age, pay_ampunt, update_id = 0):
+    def __init__(self, student_id, name, email,course, age, pay_ampunt):
         """Constructor"""
-        self.update_id = update_id
         self.id = student_id
         self.name = name
         self.email = email

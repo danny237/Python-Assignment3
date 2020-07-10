@@ -4,10 +4,11 @@ import csv
 from register import register
 from course import course_detail
 from student_info import student_info
+from update import update
 
 # creation of csv file with headers
 with open('student_detail.csv', 'w') as file:
-    fieldnames = ['Id', 'name', 'emain','age', 'course', 'pay_ampunt', 'remaining_amount']
+    fieldnames = ['Id', 'name', 'emain','age', 'course', 'paid_amount', 'remaining']
     csv_writer = csv.DictWriter(file, fieldnames=fieldnames)
     csv_writer.writeheader()
 
@@ -43,7 +44,7 @@ def main():
         if choice == 1:
             print('\n Course Details: ')
             course_detail()
-            if input("Press 'y' to go back: ").lower() == 'y':
+            if input("Press 'b' to go back (otherwise exit.) ").lower() == 'b':
                 main()
         
         #registration
@@ -55,7 +56,8 @@ def main():
 
         elif choice == 4:
             student_info()
-            print('\nUpdate about the student.')
+            update()
+            
 
 
         elif choice == 5:
