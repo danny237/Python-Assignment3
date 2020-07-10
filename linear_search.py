@@ -28,6 +28,6 @@ print('Enter the number to search in the list.')
 n = int(input())
 returned_index = linear_search(user_list, n)
 if returned_index is not None:
-    print(f'{n} is present in {returned_index} index  list.')
+    print(f'{n} is present in {returned_index} index of list.')
 else:
     print('Not found')
