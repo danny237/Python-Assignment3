@@ -4,7 +4,6 @@ import csv
 from register import register
 from course import course_detail
 from student_info import student_info
-from update import update
 
 # creation of csv file with headers
 with open('student_detail.csv', 'w') as file:
@@ -55,16 +54,10 @@ def main():
             student_info()
 
         elif choice == 4:
-            student_info()
-            update()
-            
-
+            print('Update student is on progress.')
 
         elif choice == 5:
-            print('Delete the student.')
-
-        elif choice == 6:
-            print('Return the deposited amount after successfully complete the course.')
+            print('Delet student is on progress')
 
         do_continue = input('Do you want to continue? y/n: ').lower()
         if do_continue != 'y':
